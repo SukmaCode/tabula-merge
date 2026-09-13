@@ -8,7 +8,7 @@ import Footer from './components/footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-bg-main text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
+    <div className="min-h-screen flex flex-col w-full max-w-full overflow-x-clip bg-bg-main text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
 
       {/* ── TOP NAVIGATION ── */}
       <Navbar />

@@ -12,15 +12,15 @@ export default function Superiority() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {/* Fail Card */}
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 border-l-4 border-l-red-500 shadow-sm flex flex-col justify-between">
+        <div className="bg-red-300 p-6 sm:p-8 border-4 border-black shadow-hard flex flex-col justify-between">
           <div>
-            <span className="inline-block px-3 py-1 rounded-md bg-red-50 border border-red-200 text-red-700 text-xs font-bold mb-3">
+            <span className="inline-block px-3 py-1 rounded-full border-2 border-black bg-white text-red-700 text-xs font-bold mb-3">
               Excel Power Query (Combine &amp; Load)
             </span>
             <h4 className="text-lg sm:text-xl font-bold text-slate-900 mb-4">
               Keterbatasan Fitur Bawaan Excel
             </h4>
-            <ul className="space-y-3.5 text-slate-600 text-sm sm:text-[14.5px]">
+            <ul className="space-y-3.5 text-slate-700 text-sm sm:text-[14.5px]">
               <li className="flex items-start gap-2.5">
                 <span className="text-red-500 font-extrabold flex-shrink-0 text-base leading-tight">&#10005;</span>
                 <span><strong>Hanya 1 Sheet per Proses:</strong> Pengguna harus membuat dan menghubungkan 77 query manual satu per satu.</span>
@@ -42,15 +42,15 @@ export default function Superiority() {
         </div>
 
         {/* Success Card */}
-        <div className="bg-gradient-to-b from-white to-emerald-50/30 rounded-2xl p-6 sm:p-8 border border-slate-200 border-l-4 border-l-excel-primary shadow-sm flex flex-col justify-between">
+        <div className="bg-green-300 p-6 sm:p-8 border-4 border-black shadow-hard flex flex-col justify-between">
           <div>
-            <span className="inline-block px-3 py-1 rounded-md bg-excel-tint border border-excel-tint-border text-excel-dark text-xs font-bold mb-3">
+            <span className="inline-block px-3 py-1 rounded-full border-2 border-black bg-white text-green-700 text-xs font-bold mb-3">
               TabulaMerge Engine (Aplikasi Ini)
             </span>
             <h4 className="text-lg sm:text-xl font-bold text-slate-900 mb-4">
               Kelebihan Mesin TabulaMerge
             </h4>
-            <ul className="space-y-3.5 text-slate-600 text-sm sm:text-[14.5px]">
+            <ul className="space-y-3.5 text-slate-700 text-sm sm:text-[14.5px]">
               <li className="flex items-start gap-2.5">
                 <span className="text-excel-primary font-extrabold flex-shrink-0 text-base leading-tight">&#10003;</span>
                 <span><strong>Looping Otomatis 77 Sheet:</strong> Sekali klik, seluruh sheet kuesioner diproses serentak tanpa sisa.</span>

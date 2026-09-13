@@ -27,12 +27,12 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16 sm:h-18">
                     {/* Brand Logo */}
                     <a href="#" className="flex items-center gap-3 group text-decoration-none">
-                        <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-excel-primary to-excel-primary-hover flex items-center justify-center text-white font-extrabold text-lg shadow-sm shadow-emerald-800/30 transition-transform group-hover:scale-105 flex-shrink-0">
-                            X
+                        <div className="w-9 h-9 flex items-center justify-center text-black font-bold text-md border-2 border-black p-2 shadow-hard transition-transform group-hover:scale-105 flex-shrink-0">
+                            TM
                         </div>
                         <div className="flex flex-col">
                             <h1 className="text-base sm:text-lg font-extrabold text-slate-900 leading-tight group-hover:text-excel-primary transition-colors">
-                                TabulaMerge
+                                <span className='text-excel-primary'>Tabula</span>Merge
                             </h1>
                             <span className="text-[10px] sm:text-[11px] font-regular text-slate-800 uppercase block truncate max-w-[190px] sm:max-w-none">
                                 Multi-Sheet Survey Consolidation Engine
