@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-excel-dark: #0e5c2f;
+  --color-excel-primary: #107c41;
+  --color-excel-primary-hover: #0c6b37;
+  --color-excel-accent: #1fd675;
+  --color-excel-tint: #eafaf1;
+  --color-excel-tint-border: #b8ebd0;
+  
+  --color-excel-total-gold: #ffc000;
+  --color-excel-header-blue1: #d9e1f2;
+  --color-excel-header-blue2: #bdd7ee;
+  --color-excel-formula: #0284c7;
+  --color-excel-formula-bg: #f0fdf4;
+  --color-excel-formula-text: #166534;
+  --color-excel-col-f1: #e0f2fe;
+  --color-excel-col-f2-bg: #dcfce7;
+  --color-excel-col-f2-text: #166534;
+  --color-excel-col-backup-bg: #fef3c7;
+  --color-excel-col-backup-text: #92400e;
+
+  --color-bg-main: #f8fafc;
+
+  --shadow-hard: 5px 5px 0px 0px #000000;
+  --shadow-hard-hover: 3px 3px 0px 0px #000000;
+
+  --font-sans: 'Unbounded', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-unbounded: 'Unbounded', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./assets/fonts/Unbounded-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./assets/fonts/Unbounded-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./assets/fonts/Unbounded-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./assets/fonts/Unbounded-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-unbounded);
+    background-color: var(--color-bg-main);
+    color: #0f172a;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-image: 
+      radial-gradient(rgba(16, 124, 65, 0.05) 1px, transparent 1px),
+      radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
